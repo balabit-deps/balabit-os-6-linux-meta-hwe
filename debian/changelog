@@ -1,0 +1,364 @@
+linux-meta-hwe (4.15.0.34.56) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-34
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Tue, 28 Aug 2018 01:40:18 -0400
+
+linux-meta-hwe (4.15.0.33.55) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-33
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Wed, 15 Aug 2018 16:01:36 +0000
+
+linux-meta-hwe (4.15.0.32.54) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-32
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Fri, 10 Aug 2018 16:41:58 -0300
+
+linux-meta-hwe (4.15.0.31.53) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-31
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 03 Aug 2018 15:27:04 +0200
+
+linux-meta-hwe (4.15.0.30.52) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-30
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 27 Jul 2018 10:13:51 +0200
+
+linux-meta-hwe (4.15.0.29.51) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-29
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 18 Jul 2018 04:17:31 +0000
+
+linux-meta-hwe (4.15.0.28.50) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-28
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Fri, 13 Jul 2018 01:06:30 +0000
+
+linux-meta-hwe (4.15.0.27.49) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-27
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 11 Jul 2018 04:19:01 +0000
+
+linux-meta-hwe (4.15.0.26.48) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-26
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Thu, 05 Jul 2018 11:06:08 +0200
+
+linux-meta-hwe (4.15.0.25.47) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-25
+
+  * Miscellaneous Ubuntu changes
+    - update-version should use hwe tags
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 02 Jul 2018 18:17:43 +0200
+
+linux-meta-hwe (4.15.0.24.46) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-24
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 15 Jun 2018 14:55:07 +0100
+
+linux-meta-hwe-edge (4.15.0.23.45) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-23
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Thu, 24 May 2018 12:09:45 +0200
+
+linux-meta-hwe-edge (4.15.0.22.44) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-22
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 18 May 2018 09:30:03 +0200
+
+linux-meta-hwe-edge (4.15.0.21.43) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-21
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Thu, 03 May 2018 10:44:36 -0300
+
+linux-meta-hwe-edge (4.15.0.20.42) xenial; urgency=medium
+
+  * Fix transitional linux-signed* packages to use the proper suffix.
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Wed, 25 Apr 2018 08:51:35 -0300
+
+linux-meta-hwe-edge (4.15.0.20.41) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-20
+
+  * signing: only install a signed kernel (LP: #1764794)
+    - switch to linux-image as signed when available
+    - convert linux-signed* into transitional packages
+
+  * need to ensure microcode updates are available to all bare-metal installs of
+    Ubuntu (LP: #1738259)
+    - Make kernel image packages depend on cpu microcode updates
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Tue, 24 Apr 2018 21:16:28 -0300
+
+linux-meta-hwe-edge (4.15.0.15.40) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-15
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Wed, 04 Apr 2018 15:12:35 -0300
+
+linux-meta-hwe-edge (4.15.0.13.39) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-13
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Fri, 16 Mar 2018 21:08:25 -0500
+
+linux-meta-hwe-edge (4.15.0.12.38) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-12
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Thu, 08 Mar 2018 15:54:16 +0100
+
+linux-meta-hwe-edge (4.15.0.10.37) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-10
+
+ -- Marcelo Henrique Cerri <marcelo.cerri@canonical.com>  Fri, 16 Feb 2018 12:56:31 -0200
+
+linux-meta-hwe-edge (4.13.0.35.36) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-35
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 12 Feb 2018 17:25:11 +0100
+
+linux-meta-hwe-edge (4.13.0.33.35) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-33
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Thu, 08 Feb 2018 12:00:59 +0100
+
+linux-meta-hwe-edge (4.13.0.32.34) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-32
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Thu, 25 Jan 2018 12:26:15 +0100
+
+linux-meta-hwe-edge (4.13.0.31.33) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-31
+
+  * Miscellaneous upstream changes
+    - Revert "UBUNTU: Make kernel image packages depend on cpu microcode updates"
+
+ -- Marcelo Henrique Cerri <marcelo.cerri@canonical.com>  Fri, 19 Jan 2018 14:54:30 -0200
+
+linux-meta-hwe-edge (4.13.0.25.32) xenial; urgency=medium
+
+  * Make the kernel image packages depend on the cpu microcode updates,
+    to ensure they are pulled into all host installs of Ubuntu on upgrade.
+    LP: #1738259.
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Wed, 10 Jan 2018 15:05:35 -0600
+
+linux-meta-hwe-edge (4.13.0.25.31) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-25
+
+ -- Marcelo Henrique Cerri <marcelo.cerri@canonical.com>  Mon, 08 Jan 2018 20:13:25 -0200
+
+linux-meta-hwe-edge (4.13.0.24.30) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-24
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Sun, 07 Jan 2018 15:45:34 +0100
+
+linux-meta-hwe-edge (4.13.0.23.29) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-23
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Sat, 06 Jan 2018 16:32:57 +0100
+
+linux-meta-hwe-edge (4.13.0.22.28) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-22
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Tue, 19 Dec 2017 09:26:59 -0200
+
+linux-meta-hwe-edge (4.13.0.21.27) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-21
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Mon, 18 Dec 2017 15:44:15 -0200
+
+linux-meta-hwe-edge (4.13.0.19.26) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-19
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Mon, 04 Dec 2017 16:27:05 +0100
+
+linux-meta-hwe-edge (4.13.0.18.25) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-18
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Wed, 22 Nov 2017 14:18:03 +0100
+
+linux-meta-hwe-edge (4.13.0.17.24) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-17
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 06 Nov 2017 12:46:00 +0100
+
+linux-meta-hwe-edge (4.13.0.16.23) xenial; urgency=medium
+
+  * Bump ABI 4.13.0-16
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Thu, 12 Oct 2017 14:48:17 -0500
+
+linux-meta-hwe-edge (4.11.0.14.22) xenial; urgency=medium
+
+  * Bump ABI 4.11.0-14
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Wed, 09 Aug 2017 12:31:11 +0200
+
+linux-meta-hwe-edge (4.11.0.13.21) xenial; urgency=medium
+
+  * Bump ABI 4.11.0-13
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Wed, 02 Aug 2017 22:52:45 -0300
+
+linux-meta-hwe-edge (4.11.0.12.20) xenial; urgency=medium
+
+  * Bump ABI 4.11.0-12
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 28 Jul 2017 14:57:40 +0100
+
+linux-meta-hwe-edge (4.10.0.26.19) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-26
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Tue, 27 Jun 2017 11:27:04 +0200
+
+linux-meta-hwe-edge (4.10.0.25.18) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-25
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Tue, 20 Jun 2017 17:40:46 +0200
+
+linux-meta-hwe-edge (4.10.0.24.17) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-24
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Wed, 14 Jun 2017 16:05:08 +0200
+
+linux-meta-hwe-edge (4.10.0.23.16) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-23
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 09 Jun 2017 12:36:36 +0200
+
+linux-meta-hwe-edge (4.10.0.22.15) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-22
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Mon, 22 May 2017 17:33:55 -0300
+
+linux-meta-hwe-edge (4.10.0.21.14) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-21
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Tue, 02 May 2017 11:46:57 +0200
+
+linux-meta-hwe-edge (4.10.0.20.13) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-20
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Thu, 20 Apr 2017 12:01:29 +0200
+
+linux-meta-hwe-edge (4.10.0.19.12) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-19
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 07 Apr 2017 08:54:45 +0100
+
+linux-meta-hwe-edge (4.10.0.14.11) xenial; urgency=medium
+
+  * Drop powerpc architecture 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 24 Mar 2017 10:23:28 -0600
+
+linux-meta-hwe-edge (4.10.0.14.10) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-14
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 17 Mar 2017 11:18:51 -0600
+
+linux-meta-hwe-edge (4.10.0.13.9) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-13
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 10 Mar 2017 10:55:38 -0700
+
+linux-meta-hwe-edge (4.10.0.12.8) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-12
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 08 Mar 2017 13:51:59 -0700
+
+linux-meta-hwe-edge (4.10.0.9.7) xenial; urgency=medium
+
+  * Bump ABI 4.10.0-9
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 02 Mar 2017 09:43:25 -0700
+
+linux-meta-hwe-edge (4.8.0.34.6) xenial; urgency=medium
+
+  * Bump ABI 4.8.0-34
+
+  * Miscellaneous Ubuntu changes
+    - fix tag prefix in update-version
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Wed, 21 Dec 2016 18:11:36 +0000
+
+linux-meta-hwe-edge (4.8.0.32.5) xenial; urgency=medium
+
+  * Bump ABI 4.8.0-32
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Tue, 13 Dec 2016 13:35:42 -0200
+
+linux-meta-hwe-edge (4.8.0.31.4) xenial; urgency=medium
+
+  * Bump ABI 4.8.0-31
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Wed, 07 Dec 2016 15:27:48 +0000
+
+linux-meta-hwe-edge (4.8.0.30.3) xenial; urgency=medium
+
+  * Bump ABI 4.8.0-30
+
+ -- Brad Figg <brad.figg@canonical.com>  Thu, 01 Dec 2016 18:22:09 -0800
+
+linux-meta-hwe-edge (4.8.0.28.2) xenial; urgency=medium
+
+  * Bump ABI 4.8.0-28
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Mon, 21 Nov 2016 11:48:43 +0000
+
+linux-meta-hwe-edge (4.8.0.27.1) xenial; urgency=medium
+
+  * Miscellaneous Ubuntu changes
+    - switch to -hwe{,-edge} suffixes
+    - update-version: handle ABI extraction correctly
+    - suppress linux-source/linux-crashdump primary packages
+    - suppress transitional packages not applicable in a backport
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 04 Nov 2016 16:28:13 +0000
+
+linux-meta-hwe-edge (4.8.0.27.0) xenial; urgency=medium
+
+  * Initial version.
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 04 Nov 2016 15:59:32 +0000

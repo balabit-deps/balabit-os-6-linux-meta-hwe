@@ -1,0 +1,235 @@
+Source: linux-meta-hwe
+Section: devel
+Priority: optional
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Standards-Version: 3.9.8
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk,
+ linux-headers-4.15.0-34,
+ linux-headers-4.15.0-34-generic,
+Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/xenial
+
+#Package: linux-source-hwe-16.04
+#Architecture: all
+#Depends: ${misc:Depends}, linux-source-${kernel-version}
+#Description: Linux kernel source with Ubuntu patches
+# This package will always depend on the latest Linux kernel source code
+# available. The Ubuntu patches have been applied.
+
+#Package: linux-crashdump-hwe-16.04
+#Architecture: i386 amd64 armhf ppc64el s390x
+#Depends: ${misc:Depends}, kdump-tools, grub-pc (>= 1.96+20090611-1ubuntu2) [i386 amd64] | grub-efi-ia32 [i386 amd64] | grub-efi-amd64 [i386 amd64] | grub (>= 0.97-29ubuntu24) [i386 amd64]
+#Recommends: apport
+#Suggests: crash
+#Description: Linux kernel crashdump setup for the latest generic kernel
+# This package installs all the needed infrastructure to get crashdumps from
+# your running system. If you are experiencing kernel crashes that cannot
+# be debugged normally (because the problem is infrequent or panic's the
+# system in such a way as to make information gathering impossible), then
+# you can install this package to automatically enable capture of the
+# vmcore on crashes.
+
+
+Package: linux-headers-generic-hwe-16.04
+Architecture: i386 amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic
+Description: Generic Linux kernel headers
+ This package will always depend on the latest generic kernel headers
+ available.
+
+Package: linux-image-generic-hwe-16.04
+Architecture: i386 amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic, linux-modules-extra-${kernel-abi-version}-generic [i386 amd64 arm64 powerpc ppc64el s390x], linux-firmware, intel-microcode [amd64 i386], amd64-microcode [amd64 i386]
+Recommends: thermald [i386 amd64]
+Description: Generic Linux kernel image
+ This package will always depend on the latest generic kernel image
+ available.
+
+Package: linux-tools-generic-hwe-16.04
+Architecture: i386 amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-generic
+Description: Generic Linux kernel tools
+ This package will always depend on the latest generic kernel tools
+ available.
+
+Package: linux-cloud-tools-generic-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Provides: linux-cloud-tools
+Depends: ${misc:Depends}, linux-cloud-tools-${kernel-abi-version}-generic
+Description: Generic Linux kernel cloud tools
+ This package will always depend on the latest generic kernel cloud tools
+ available.
+
+Package: linux-generic-hwe-16.04
+Architecture: i386 amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-image-generic-hwe-16.04 (= ${binary:Version}), linux-headers-generic-hwe-16.04 (= ${binary:Version})
+Description: Complete Generic Linux kernel and headers
+ This package will always depend on the latest complete generic Linux kernel
+ and headers.
+
+
+Package: linux-headers-generic-lpae-hwe-16.04
+Architecture: armhf
+Section: kernel
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic-lpae
+Description: Generic LPAE Linux kernel headers
+ This package will always depend on the latest generic-lpae kernel headers
+ available.
+
+Package: linux-image-generic-lpae-hwe-16.04
+Architecture: armhf
+Section: kernel
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic-lpae, linux-firmware
+Recommends: thermald [i386 amd64]
+Description: Generic LPAE Linux kernel image
+ This package will always depend on the latest generic-lpae kernel image
+ available.
+
+Package: linux-tools-generic-lpae-hwe-16.04
+Architecture: armhf
+Section: kernel
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-generic-lpae
+Description: Generic LPAE Linux kernel tools
+ This package will always depend on the latest generic-lpae kernel tools
+ available.
+
+Package: linux-generic-lpae-hwe-16.04
+Architecture: armhf
+Section: kernel
+Depends: ${misc:Depends}, linux-image-generic-lpae-hwe-16.04 (= ${binary:Version}), linux-headers-generic-lpae-hwe-16.04 (= ${binary:Version})
+Description: Complete Generic LPAE Linux kernel and headers
+ This package will always depend on the latest complete generic-lpae Linux kernel
+ and headers.
+
+
+Package: linux-headers-lowlatency-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-lowlatency
+Description: lowlatency Linux kernel headers
+ This package will always depend on the latest lowlatency kernel headers
+ available.
+
+Package: linux-image-lowlatency-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-lowlatency, linux-firmware, intel-microcode [amd64 i386], amd64-microcode [amd64 i386]
+Recommends: thermald [i386 amd64]
+Description: lowlatency Linux kernel image
+ This package will always depend on the latest lowlatency kernel image
+ available.
+
+Package: linux-tools-lowlatency-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-lowlatency
+Description: lowlatency Linux kernel tools
+ This package will always depend on the latest lowlatency kernel tools
+ available.
+
+Package: linux-cloud-tools-lowlatency-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Provides: linux-cloud-tools
+Depends: ${misc:Depends}, linux-cloud-tools-${kernel-abi-version}-lowlatency
+Description: lowlatency Linux kernel cloud tools
+ This package will always depend on the latest lowlatency kernel cloud tools
+ available.
+
+Package: linux-lowlatency-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Depends: ${misc:Depends}, linux-image-lowlatency-hwe-16.04 (= ${binary:Version}), linux-headers-lowlatency-hwe-16.04 (= ${binary:Version})
+Description: Complete lowlatency Linux kernel
+ This package will always depend on the latest complete lowlatency Linux kernel
+ available.
+
+
+Package: linux-signed-image-generic-hwe-16.04
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-image-generic-hwe-16.04
+Description: Signed Generic Linux kernel image (dummy transitional package)
+ This package will always depend on the latest generic kernel image
+ available.  Signed with the Ubuntu EFI key.
+
+Package: linux-signed-generic-hwe-16.04
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-generic-hwe-16.04
+Description: Complete Signed Generic Linux kernel and headers (dummy transitional package)
+ This package will always depend on the latest complete generic Linux kernel
+ and headers.  Signed with the Ubuntu EFI key.
+
+Package: linux-signed-image-lowlatency-hwe-16.04
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-image-lowlatency-hwe-16.04
+Description: Signed Lowlatency Linux kernel image (dummy transitional package)
+ This package will always depend on the latest lowlatency kernel image
+ available.  Signed with the Ubuntu EFI key.
+
+Package: linux-signed-lowlatency-hwe-16.04
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-lowlatency-hwe-16.04
+Description: Complete Signed Lowlatency Linux kernel and headers (dummy transitional package)
+ This package will always depend on the latest complete lowlatency Linux kernel
+ and headers.  Signed with the Ubuntu EFI key.
+
+
+Package: linux-headers-virtual-hwe-16.04
+Architecture: i386 amd64 arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-headers-generic-hwe-16.04 (= ${binary:Version})
+Description: Virtual Linux kernel headers
+ This package will always depend on linux-headers-generic.
+
+Package: linux-image-virtual-hwe-16.04
+Architecture: i386 amd64 arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic
+Description: Virtual Linux kernel image
+ This package will always depend on the latest minimal generic kernel image
+ used for virtual instances.
+
+Package: linux-tools-virtual-hwe-16.04
+Architecture: i386 amd64 arm64 ppc64el s390x
+Section: kernel
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-generic
+Description: Virtual Linux kernel tools
+ This package will always depend on the latest minimal generic kernel tools
+ used for virtual instances.
+
+Package: linux-cloud-tools-virtual-hwe-16.04
+Architecture: i386 amd64
+Section: kernel
+Provides: linux-cloud-tools
+Depends: ${misc:Depends}, linux-cloud-tools-${kernel-abi-version}-generic
+Description: Virtual Linux kernel cloud tools
+ This package will always depend on the latest minimal generic kernel cloud tools
+ used for virtual instances.
+
+Package: linux-virtual-hwe-16.04
+Architecture: i386 amd64 arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-image-virtual-hwe-16.04 (= ${binary:Version}), linux-headers-virtual-hwe-16.04 (= ${binary:Version})
+Description: Minimal Generic Linux kernel and headers
+ This package will always depend on linux-image-virtual and
+ linux-headers-virtual.
+
+Package: linux-image-extra-virtual-hwe-16.04
+Architecture: i386 amd64 arm64 ppc64el s390x
+Section: kernel
+Depends: ${misc:Depends}, linux-image-generic-hwe-16.04 (= ${binary:Version})
+Description: Extra drivers for Virtual Linux kernel image
+ This package will always depend on linux-image-generic.
+
