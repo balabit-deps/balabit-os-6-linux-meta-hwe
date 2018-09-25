@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.9.8
 Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk,
- linux-headers-4.15.0-34,
- linux-headers-4.15.0-34-generic,
+ linux-headers-4.15.0-36,
+ linux-headers-4.15.0-36-generic,
 Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/xenial
 
 #Package: linux-source-hwe-16.04
@@ -184,6 +184,53 @@ Description: Complete Signed Lowlatency Linux kernel and headers (dummy transiti
  This package will always depend on the latest complete lowlatency Linux kernel
  and headers.  Signed with the Ubuntu EFI key.
 
+
+Package: linux-image-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-image-generic-hwe-16.04
+Description: Depends on the generic hardware enablement kernel image (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-generic-hwe-16.04
+Description: Depends on the generic hardware enablement kernel image and headers (dummy transitional packages)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-tools-oem
+Architecture: amd64
+Section: oldlibs
+Depends: linux-tools-generic-hwe-16.04
+Description: Linux kernel versioned Tools (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-headers-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-headers-generic-hwe-16.04
+Description: Generic Linux kernel headers (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-signed-image-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-signed-image-generic-hwe-16.04
+Description: Signed Generic Linux kernel image (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-signed-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-signed-generic-hwe-16.04
+Description: Complete Signed Generic Linux kernel and headers (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
 
 Package: linux-headers-virtual-hwe-16.04
 Architecture: i386 amd64 arm64 ppc64el s390x

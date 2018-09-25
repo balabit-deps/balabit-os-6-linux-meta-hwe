@@ -1,0 +1,46 @@
+Package: linux-image-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-image-generic-hwe-16.04
+Description: Depends on the generic hardware enablement kernel image (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-generic-hwe-16.04
+Description: Depends on the generic hardware enablement kernel image and headers (dummy transitional packages)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-tools-oem
+Architecture: amd64
+Section: oldlibs
+Depends: linux-tools-generic-hwe-16.04
+Description: Linux kernel versioned Tools (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-headers-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-headers-generic-hwe-16.04
+Description: Generic Linux kernel headers (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-signed-image-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-signed-image-generic-hwe-16.04
+Description: Signed Generic Linux kernel image (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
+
+Package: linux-signed-oem
+Architecture: amd64
+Section: oldlibs
+Priority: optional
+Depends: linux-signed-generic-hwe-16.04
+Description: Complete Signed Generic Linux kernel and headers (dummy transitional package)
+ Transitional package for upgrades from linux-oem to hwe
