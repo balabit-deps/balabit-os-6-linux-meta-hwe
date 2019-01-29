@@ -1,3 +1,15 @@
+linux-meta-hwe (4.15.0.45.66) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-45
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Tue, 29 Jan 2019 18:54:48 +0100
+
+linux-meta-hwe (4.15.0.44.65) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-44
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 14 Jan 2019 14:24:11 +0000
+
 linux-meta-hwe (4.15.0.43.64) xenial; urgency=medium
 
   * Bump ABI 4.15.0-43
