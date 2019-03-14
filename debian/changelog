@@ -1,3 +1,9 @@
+linux-meta-hwe (4.15.0.47.68) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-47
+
+ -- Wen-chien Jesse Sung <jesse.sung@canonical.com>  Thu, 14 Mar 2019 23:22:21 +0800
+
 linux-meta-hwe (4.15.0.46.67) xenial; urgency=medium
 
   * Bump ABI 4.15.0-46
