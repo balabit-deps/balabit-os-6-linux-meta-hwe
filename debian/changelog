@@ -1,3 +1,9 @@
+linux-meta-hwe (4.15.0.62.82) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-62
+
+ -- Sultan Alsawaf <sultan.alsawaf@canonical.com>  Thu, 05 Sep 2019 17:59:42 -0700
+
 linux-meta-hwe (4.15.0.60.81) xenial; urgency=medium
 
   * Bump ABI 4.15.0-60
