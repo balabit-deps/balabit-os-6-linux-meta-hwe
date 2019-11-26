@@ -1,3 +1,18 @@
+linux-meta-hwe (4.15.0.72.92) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-72
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Tue, 26 Nov 2019 17:15:38 +0100
+
+linux-meta-hwe (4.15.0.71.91) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-71
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] Add meta-variants support
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 18 Nov 2019 12:12:40 +0100
+
 linux-meta-hwe (4.15.0.70.90) xenial; urgency=medium
 
   * Bump ABI 4.15.0-70

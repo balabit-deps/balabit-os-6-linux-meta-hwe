@@ -1,15 +1,15 @@
-Package: linux-signed-image-lowlatency@SUFFIX@
+Package: linux-signed-image-lowlatency${variant:suffix}
 Architecture: amd64
 Section: oldlibs
-Depends: ${misc:Depends}, linux-image-lowlatency@SUFFIX@
+Depends: ${misc:Depends}, linux-image-lowlatency${variant:suffix}
 Description: Signed Lowlatency Linux kernel image (dummy transitional package)
  This package will always depend on the latest lowlatency kernel image
  available.  Signed with the Ubuntu EFI key.
 
-Package: linux-signed-lowlatency@SUFFIX@
+Package: linux-signed-lowlatency${variant:suffix}
 Architecture: amd64
 Section: oldlibs
-Depends: ${misc:Depends}, linux-lowlatency@SUFFIX@
+Depends: ${misc:Depends}, linux-lowlatency${variant:suffix}
 Description: Complete Signed Lowlatency Linux kernel and headers (dummy transitional package)
  This package will always depend on the latest complete lowlatency Linux kernel
  and headers.  Signed with the Ubuntu EFI key.

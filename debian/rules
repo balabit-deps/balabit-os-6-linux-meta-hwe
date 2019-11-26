@@ -14,7 +14,6 @@
 SERIES=$(shell dpkg-parsechangelog | sed -ne 's/^Distribution: *//p' | sed -e 's/-\(security\|updates\|proposed\)$$//')
 SOURCE=$(shell dpkg-parsechangelog | sed -ne 's/^Source: *//p')
 SRCSUFFIX=$(shell dpkg-parsechangelog | sed -ne 's/^Source: *linux-meta\(-hwe.*\)/\1/p')
-SUFFIX=$(shell dpkg-parsechangelog | sed -ne 's/^Source: *linux-meta\(-hwe\)\(.*\)/\1-16.04\2/p')
 
 # 5 digit versions (2.6.38.<abi>.<upload>, 3 digit kernel base versions (2.6.38)
 KERNEL_VERSION=$(shell dpkg-parsechangelog | grep ^Version | sed -e \
@@ -44,17 +43,29 @@ clean: debian/control
 	dh_testroot
 	dh_clean
 
+# Variants -- is prime and implies no suffix.
+# Possible elements: -- -edge -lts-18.04
+variants=-hwe-16.04 -hwe-16.04-edge
+
+define variant_payload
+variant="$$(echo '$(variant)' | sed -e 's/--//')"; \
+sed -e "s/\$${variant:suffix}/$$variant/g" <$$i; \
+echo "";
+endef
+
 debian/control: $(control_files)
-	rm -f debian/control.tmp
 	for i in $^; do \
-		sed \
-			-e 's/@SERIES@/$(SERIES)/g' \
-			-e 's/@SRCSUFFIX@/$(SRCSUFFIX)/g' \
-			-e 's/@SUFFIX@/$(SUFFIX)/g' \
-			-e 's/@kernel-abi-version@/$(KERNEL_ABI_VERSION)/g' \
-			$$i >> debian/control.tmp; \
-		echo >> debian/control.tmp; \
-	done
+		if grep -q "{variant:" $$i; then \
+			$(foreach variant,$(variants),$(variant_payload)) \
+		else \
+			cat $$i; \
+			echo ""; \
+		fi; \
+	done | sed \
+		-e 's/@SERIES@/$(SERIES)/g' \
+		-e 's/@SRCSUFFIX@/$(SRCSUFFIX)/g' \
+		-e 's/@kernel-abi-version@/$(KERNEL_ABI_VERSION)/g' \
+	    >$@.tmp
 	rm -f $@
 	mv debian/control.tmp $@
 
