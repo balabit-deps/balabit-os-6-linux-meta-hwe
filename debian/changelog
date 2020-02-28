@@ -1,3 +1,24 @@
+linux-meta-hwe (4.15.0.91.101) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-91
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Fri, 28 Feb 2020 14:48:19 +0100
+
+linux-meta-hwe (4.15.0.90.100) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-90
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Wed, 26 Feb 2020 12:17:31 +0100
+
+linux-meta-hwe (4.15.0.89.99) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-89
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync git-ubuntu-log
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 17 Feb 2020 13:16:48 +0100
+
 linux-meta-hwe (4.15.0.88.98) xenial; urgency=medium
 
   * Bump ABI 4.15.0-88
