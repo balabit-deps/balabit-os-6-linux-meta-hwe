@@ -1,3 +1,21 @@
+linux-meta-hwe (4.15.0.96.104) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-96
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Tue, 31 Mar 2020 23:32:43 -0300
+
+linux-meta-hwe (4.15.0.94.103) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-94
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Wed, 25 Mar 2020 15:28:44 +0100
+
+linux-meta-hwe (4.15.0.92.102) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-92
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Tue, 17 Mar 2020 15:18:09 +0100
+
 linux-meta-hwe (4.15.0.91.101) xenial; urgency=medium
 
   * Bump ABI 4.15.0-91
