@@ -1,3 +1,9 @@
+linux-meta-hwe (4.15.0.122.122) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-122
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Thu, 15 Oct 2020 16:50:36 +0200
+
 linux-meta-hwe (4.15.0.120.121) xenial; urgency=medium
 
   * Bump ABI 4.15.0-120
