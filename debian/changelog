@@ -1,3 +1,9 @@
+linux-meta-hwe (4.15.0.129.128) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-129
+
+ -- Kelsey Skunberg <kelsey.skunberg@canonical.com>  Mon, 14 Dec 2020 23:29:43 -0700
+
 linux-meta-hwe (4.15.0.128.127) xenial; urgency=medium
 
   * Bump ABI 4.15.0-128
