@@ -1,3 +1,15 @@
+linux-meta-hwe (4.15.0.132.130) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-132
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Tue, 12 Jan 2021 17:43:41 +0100
+
+linux-meta-hwe (4.15.0.131.129) xenial; urgency=medium
+
+  * Bump ABI 4.15.0-131
+
+ -- William Breathitt Gray <william.gray@canonical.com>  Mon, 11 Jan 2021 01:42:39 -0500
+
 linux-meta-hwe (4.15.0.129.128) xenial; urgency=medium
 
   * Bump ABI 4.15.0-129
